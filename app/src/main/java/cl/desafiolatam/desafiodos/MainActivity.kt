@@ -16,6 +16,26 @@ import cl.desafiolatam.desafiodos.task.TaskUIDataHolder
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.add_task.view.*
 
+/*
+[X] 1. Debe agregar todas las dependencias y configuraciones necesarias para integrar Room en el proyecto.
+    [X] a. Agregar dependencias y configuraciones a el archivo gradle correspondiente
+    [X] b. Crear las clases necesarias para inicializar la base de datos.
+    [X] c. Agregar configuración al Manifest
+
+[] 2. Crear todos los componentes de Room para persistir la lista y poder interactuar con los datos guardados.
+    [] a. La lista sólo muestra texto, no sobre complique el modelamiento de datos. Recuerde implementar todos los componentes de Room, esto entrega.
+
+[] 3. Completar los siguientes métodos y mostrar que la aplicación persiste los datos entre diferentes corridas de la misma.
+    [] a. crear las variables en la clase MainActivity, inicializar dichas variables donde corresponde.
+    [] b. completar el método para editar o actualizar una tarea, método updateEntity.
+          completar el método para agregar una tarea, método addTask, utilizar estos métodos donde corresponda.
+    [] c. completar los métodos: para convertir entre un entity y la clase que mapea la data en pantalla
+          createEntityListFromDatabase. El método que crea una entidad a partir de texto, método
+          createEntity. Completar el método que borra todas las tareas de la base de datos.
+    [] d. La aplicación debe ejecutarse sin problemas y persistir los datos entre diferentes corridas de la misma.
+ */
+
+
 class MainActivity : AppCompatActivity(), OnItemClickListener {
     override fun onItemClick(taskItem: TaskUIDataHolder) {
         val dialogView = layoutInflater.inflate(R.layout.add_task, null)
